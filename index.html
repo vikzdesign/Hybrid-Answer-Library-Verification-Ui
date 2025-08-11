@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Answer Library Verification UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hybrid Answer Library Verification</h1>
+            <p>Verify and manage your answer libraries efficiently</p>
+        </header>
+        
+        <main>
+            <div class="verification-panel">
+                <h2>Answer Verification</h2>
+                <div class="input-group">
+                    <label for="answer-input">Enter Answer to Verify:</label>
+                    <textarea id="answer-input" placeholder="Paste your answer here..."></textarea>
+                </div>
+                
+                <div class="verification-options">
+                    <h3>Verification Options</h3>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="check-accuracy" checked>
+                            Check Accuracy
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check-consistency" checked>
+                            Check Consistency
+                        </label>
+                        <label>
+                            <input type="checkbox" id="check-completeness" checked>
+                            Check Completeness
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="verify-btn" class="verify-button">Verify Answer</button>
+                
+                <div id="results" class="results-panel" style="display: none;">
+                    <h3>Verification Results</h3>
+                    <div id="results-content"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
